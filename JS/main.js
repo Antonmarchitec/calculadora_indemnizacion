@@ -82,18 +82,11 @@ function Resultante(){
    let guardarDias = document.getElementById("guardarDias");
    let guardarDesahucio = document.getElementById("guardarDesahucio"); 
    let guardarTotal = document.getElementById("guardarTotal");
-   
-   
 
-
-
-  
-
-  
 
    if(miSalario == "" || porAños == "" || porMeses == "" || porDias == "" ){
-      /*Swal.fire({
-         title:"RELLENAR TODOS LOS CAMPOS",
+      Swal.fire({
+         title:"¡RELLENAR TODOS LOS CAMPOS!",
          icon:'error',
          confirmButtonText:'Ok!',
          width:"280px",
@@ -105,8 +98,8 @@ function Resultante(){
          confirmButtonColor:"#203753",      //color del boton
          confirmButtonAriaLabel:"Confirmar",
          showCloseButton:false,
-      })*/
-      alert("RELLENAR TODOS LOS CAMPOS");
+      })
+      //alert("RELLENAR TODOS LOS CAMPOS");
    }else if (estado == true){
       
       let resultadoPorAños = calculoPorAños(miSalario, porAños);
@@ -125,6 +118,7 @@ function Resultante(){
    
       let total = resultadoPorAños + resultadoPorMeses + resultadoPorDias + resultadoDesahucio;
       guardarTotal.textContent = total; 
+      
 
    }
 }
