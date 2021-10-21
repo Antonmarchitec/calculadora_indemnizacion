@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilos.css">  
+    <title>VALIDAR LOGIN JS</title>
+  
+</head>
+<body> 
+  
+   
+    <div class="contenedor" id="contenedor">
+
+      <h2 class="title">CALCULADORA DE <br>INDEMNIZACIÓN</h2>
+
+      <!--CAJA SALARIO-->
+
+      <div class="contSalario"> 
+        <div class="cajaIzqSalario">
+          <label for="">Salario percibido</label>
+          <input type="text" placeholder="--" id="Salario">
+        </div>
+      </div>
+  
+      
+      <!--CAJA CONTENEDORA-->
+      <div class="contMay">
+
+        <!--CAJA-AUXILIAR-->
+        <div class="contAuxiliares">
+          <!--CAJA AÑOS-->
+          <div class="cont"> 
+            <div class="cajaIzq">
+              <label for="Años">Años de servicio</label>
+              <input type="text" placeholder="--"  id = "Años">
+            </div>
+            <div class="cajaDer" id="guardarAños">
+             
+            </div>
+          </div>
+      
+          <!--CAJA MESES-->
+          <div class="cont"> 
+            <div class="cajaIzq">
+              <label for="Meses">Meses de servicio</label>
+              <input type="text" placeholder="--" id="Meses">
+            </div>
+            <div class="cajaDer" id="guardarMeses">
+            
+            </div>
+          </div>
+        </div>
+       
+        
+        <!--CAJA AUXILIAR-->
+        <div class="contAuxiliares">
+          <!--CAJA DIAS-->
+          <div class="cont"> 
+            <div class="cajaIzq">
+              <label for="Dias">Dias de servicio</label>
+              <input type="text" placeholder="--"  id="Dias"> 
+            </div>
+            <div class="cajaDer" id="guardarDias">
+              
+            </div>
+          </div>
+      
+          <!--CAJA DESAHUCIO-->
+          <div class="cont"> 
+            <div class="cajaIzq">
+              <label for="">¿Desahucio?</label>
+              <select name="" id="opciones">
+                <option value="SI"> SI </option>
+                <option value="NO"> NO</option>
+              </select>
+            </div>
+            <div class="cajaDer" id="guardarDesahucio">
+             
+            </div>
+          </div>
+  
+        </div>
+
+      </div>
+    
+     
+  
+      <!--CAJA TOTALES-->
+      <div class="contTotal"> 
+        <div class="cajaIzqTotal">
+          <label for="">TOTAL </label>
+        </div>
+        <div class="cajaDerTotal" id="guardarTotal">
+         
+        </div>
+      </div>
+      
+     
+      <!--CAJA BOTONES-->
+      <div class="contBotones">
+        <div class="contBoton">
+          <a href="#" class="enlace">
+            <div class="boton" id="ejecutar">Calcular</div>
+          </a>
+        </div>
+  
+  
+        <div class="contBoton">
+          <a href="#" class="enlace">
+            <div class="boton" id="limpiar">Limpiar</div>
+          </a>
+        </div>
+      </div>
+
+    </div>  
+
+    <!--CAJA FOOTER-->
+    <div class="footer">
+      <h2 class="textFooter">
+         Derechos reservados || @AntonioPonce
+      </h2>
+    </div>
+ 
+
+
+
+
+
+
+
+
+   <script src="JS/main.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

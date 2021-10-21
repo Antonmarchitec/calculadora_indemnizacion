@@ -1,0 +1,12 @@
+titulos    <h2>  font-size:40px;
+subtitulos <h2>  font-size:20px;
+parrafos   <p>   font-size:ninguno;
+
+las animaciones titulos
+ animation-duration:1s;
+    animation-delay:1s;
+
+
+las animaciones parrafos
+    animation-duration:0.5s;
+    animation-delay:2s;

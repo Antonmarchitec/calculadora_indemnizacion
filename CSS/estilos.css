@@ -1,0 +1,231 @@
+/*
+CALCULO 4 AÑOS 5 MESES 10 DIAS
+SALARIO 8500 BS
+
+/**********
+Entonces por los 4 años, te correspondería lo siguiente:
+POR AÑOS 4 * 8500 = 34000.-
+/************
+
+
+/**********
+Para los meses, vamos a dividir el salario mensual entre 12 para sacar 
+la parte que corresponde por mes: 
+Luego vamos a multiplicarlo por los 5 meses acumulados:
+
+POR MESES 8500/12 = 708.33.- // 708.33 * 5 = 3.541,67.-
+/************
+
+
+/************
+Y para los días, dividiremos el sueldo entre 12 meses y luego entre 30 
+días para saber a cuánto corresponde cada día proporcional.
+
+Bs 8.500 /12 = Bs 708,33 / 30 = 23,61
+Después multiplicaremos por los 10 días:
+
+23,61 x 10 = 236,11
+/*********************
+
+
+/*********
+Ahora, sumamos las 3 cantidades:
+
+Bs 34.000 + 3.541,67 + 236,11 = Bs 37.777,78
+
+Este será el monto a pagarte como indemnización por tiempo de servicios.
+/************
+
+
+
+No olvides que, en caso de no haber preaviso, deberás sumar también el desahucio 
+por 3 meses de salario.
+
+Además, a la hora de liquidarte el contrato, a tu indemnización deberás sumarle 
+el aguinaldo y vacaciones no gozadas de forma proporcional.
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --color-base:#17273bd7;
+    --color-contenedores:#0a3972;
+    --color-black:rgba(29, 29, 29, 0.842);
+}
+body{
+    background:url(../IMG/fondo.jpg.jpg);
+    background-size:cover; 
+}
+.contenedor{
+    width:100%;
+    padding: 50px;
+    background: var(--color-black);
+    margin: auto;
+}
+.contenedor .title{
+    text-align: center;
+    margin-top: 20px auto;
+    color: rgb(255, 255, 255);
+}   
+.contenedor .contSalario{
+    background: var(--color-contenedores);
+    width:250px;
+    padding: 10px;
+    margin:5px auto;
+    border: none;
+    border-radius: 10px;    
+}
+
+.contenedor .contSalario .cajaIzqSalario{
+    text-align: center;
+}
+
+
+
+/*SERVICIO*/
+
+.contenedor .contMay{
+    width:80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .contMay .contAuxiliares{
+    width: auto;
+   
+}
+.contenedor .cont{
+    background: var(--color-contenedores);
+    padding: 15px;
+    margin:5px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    
+}
+
+
+.cont .cajaIzq{
+    width: 250px;
+    height: 70px;
+    padding: 5px 0px;
+    text-align: center;
+    border-radius: 10px;
+}
+.cont .cajaDer{
+    margin:auto;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(17, 214, 240);
+}
+.contTotal{
+    background:var(--color-contenedores);
+    width: 250px;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+.contTotal .cajaIzqTotal{
+    color: white;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
+.contTotal .cajaDerTotal{
+    margin: 10px auto;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+label{
+    font-weight: 500;
+    color: rgb(17, 214, 240);
+}
+
+
+input[type=text]{
+    width: 50%;
+    height: 25px;
+    border: 2px solid var(--color-base);
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px auto;
+    color: rgb(160, 160, 160);
+}
+
+
+.contBotones{
+    width: 250px;
+    margin:auto;
+    display: flex;
+   
+}
+.contBoton{
+    width: 100px;
+    margin: auto;
+}
+.enlace{
+    text-decoration: none;
+    color: black;
+}
+.boton{
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    width: 100px;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius:5px;
+    margin: 10px auto;
+    
+}
+.enlace:hover .boton{
+    background: var(--color-contenedores);
+    color: white;
+    box-shadow: 0px 2px 5px black;
+    border: 1px solid white;
+}
+
+.footer{
+    width: 100%;
+    background: var(--color-contenedores);
+}
+.footer .textFooter{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    margin: auto;
+    font-size: 14px;
+}
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
