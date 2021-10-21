@@ -6,122 +6,61 @@
 
    
 
-
-
+   let mostrarAños = document.getElementById("mostrarAños");
+   let mostrarMeses = document.getElementById("mostrarMeses");
+   let mostrarDias = document.getElementById("mostrarDias");
 
 //FUNCIONES///////////////////////
 
 const calculoPorAños = (miSalario, porAños) => {
    if (porAños >= 0 && porAños <= 50){
+      mostrarAños.textContent = "";
       let enFuncionAños = parseFloat(porAños * miSalario);
       return enFuncionAños;
-   }else{
-      //alert("COLOQUE UN MAXIMO DE 1 A 50 AÑOS");
-      Swal.fire({
-         title:"COLOQUE UN MAXIMO DE 1 A 50 AÑOS",
-         icon:'error',
-         confirmButtonText:'Ok!',
-         width:"280px",
-         backdrop:false,     
-         position:"center",
-         //timer:5000,
-         toast:true,
-         timerProgressBar:false, 
-         confirmButtonColor:"#203753",      //color del boton
-         confirmButtonAriaLabel:"Confirmar",
-         showCloseButton:false,
-      })
-   
+   }else{ 
+      mostrarAños.textContent = '"COLOQUE UN RANGO DE 1 A 50 AÑOS"';
+      let ninguno = 0;
+      return ninguno;
    }
 }
 
 
 const calculoPorMeses = (miSalario,porMeses) => {
+   mostrarMeses.textContent = "";
    if(porMeses >= 0 && porMeses <= 12){
       let sal1 = miSalario / 12;
       let sal2 = parseFloat(sal1 * porMeses);
       return sal2;
    }else{
-      //alert("COLOQUE UN MAXIMO DE 1 A 12 MESES");
-      Swal.fire({
-         title:"COLOQUE UN MAXIMO DE 1 A 12 MESES",
-         icon:'error',
-         confirmButtonText:'Ok!',
-         width:"280px",
-         backdrop:false,     
-         position:"center",
-         //timer:5000,
-         toast:true,
-         timerProgressBar:false, 
-         confirmButtonColor:"#203753",      //color del boton
-         confirmButtonAriaLabel:"Confirmar",
-         showCloseButton:false,
-      })
+      mostrarMeses.textContent = '"COLOQUE UN RANGO DE 1 A 12 MESES"';
+      let ninguno1 = 0;
+      return ninguno1;
+      
    }     
 }
 
 const calculoPorDias = (miSalario,porDias) =>{
+   mostrarDias.textContent = "";
    if(porDias >= 0 && porDias <= 31){
       let dia1 = miSalario / 12;
       let dia2 = dia1 / 30;
       let dia3 = parseFloat(dia2 * porDias);
       return dia3;
    }else{
-      //alert("COLOQUE UN MAXIMO DE 1 A 31 DIAS");
-      Swal.fire({
-         title:"COLOQUE UN MAXIMO DE 1 A 31 DIAS",
-         icon:'error',
-         confirmButtonText:'Ok!',
-         width:"280px",
-         backdrop:false,     
-         position:"center",
-         //timer:5000,
-         toast:true,
-         timerProgressBar:false, 
-         confirmButtonColor:"#203753",      //color del boton
-         confirmButtonAriaLabel:"Confirmar",
-         showCloseButton:false,
-      })
+      mostrarDias.textContent = '"COLOQUE UN MAXIMO DE 1 A 31 DIAS"';
+      let ninguno2 = 0;
+      return ninguno2;
+     
    }
 }
 
 const calculoDesahucio = (miSalario, opciones) =>{
     if(opciones == "SI"){
-       //alert("CALCULO DESAHUCIO")
        let duplicamosSalario = miSalario * 3;
-       Swal.fire({
-         title:"DESAHUCIO INCREMENTADO",
-         icon:'success',
-         confirmButtonText:'Ok!',
-         width:"280px",
-         backdrop:false,     
-         position:"center",
-         //timer:5000,
-         toast:true,
-         timerProgressBar:false, 
-         confirmButtonColor:"#203753",      //color del boton
-         confirmButtonAriaLabel:"Confirmar",
-         showCloseButton:false,
-       })
        return duplicamosSalario;
 
-    }else if (opciones == "NO"){
-       //alert("CALCULO SIN DESAHUCIO")
+    }else if (opciones == "NO"){ 
        let valor = 0;
-       Swal.fire({
-         title:"DESAHUCIO NO INCREMENTADO",
-         icon:'success',
-         confirmButtonText:'Ok!',
-         width:"280px",
-         backdrop:false,     
-         position:"center",
-         //timer:5000,
-         toast:true,
-         timerProgressBar:false, 
-         confirmButtonColor:"#203753",      //color del boton
-         confirmButtonAriaLabel:"Confirmar",
-         showCloseButton:false,
-       })
        return valor;
     }
 }
@@ -144,6 +83,8 @@ function Resultante(){
    let guardarDesahucio = document.getElementById("guardarDesahucio"); 
    let guardarTotal = document.getElementById("guardarTotal");
    
+   
+
 
 
   
@@ -151,7 +92,7 @@ function Resultante(){
   
 
    if(miSalario == "" || porAños == "" || porMeses == "" || porDias == "" ){
-      Swal.fire({
+      /*Swal.fire({
          title:"RELLENAR TODOS LOS CAMPOS",
          icon:'error',
          confirmButtonText:'Ok!',
@@ -164,8 +105,8 @@ function Resultante(){
          confirmButtonColor:"#203753",      //color del boton
          confirmButtonAriaLabel:"Confirmar",
          showCloseButton:false,
-      })
-      //alert("RELLENAR TODOS LOS CAMPOS");
+      })*/
+      alert("RELLENAR TODOS LOS CAMPOS");
    }else if (estado == true){
       
       let resultadoPorAños = calculoPorAños(miSalario, porAños);
@@ -190,7 +131,7 @@ function Resultante(){
 
 
 
-ejecutar.addEventListener("click", ()=>{
+ejecutar.addEventListener("click", () =>{
    Resultante();
 })
 

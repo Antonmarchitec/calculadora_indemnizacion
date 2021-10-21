@@ -113,6 +113,7 @@ body{
 }
 
 
+
 .cont .cajaIzq{
     width: 250px;
     height: 70px;
@@ -120,13 +121,23 @@ body{
     text-align: center;
     border-radius: 10px;
 }
+.cont .mostrar{
+    width: 150px;
+    padding: 2px 0px;
+    /*background: grey;*/
+    margin: auto;
+    transition: 0.5s all;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(241, 35, 35);
+}
 .cont .cajaDer{
     margin:auto;
     width: 150px;
     height: 30px;
     border-radius: 5px;
     text-align: center;
-    color: rgb(17, 214, 240);
+    color: rgb(255, 255, 255);
 }
 .contTotal{
     background:var(--color-contenedores);
