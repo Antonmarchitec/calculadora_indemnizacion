@@ -75,9 +75,16 @@ SISTEMA DE ACTUALIZACION DE VERSIONES GIT
   2. git branch -M main
   3. git push -u origin main
 
+
+# PARA COLOCAR EN EL REPOSITORIO CREADO EN GITHUB
+  1. git branch -m main gh-pages                 (colocar el nombre del proyecto rama creada en github direccionar)
+  2. git branch                                  (verificamos si estamos en la rama correcta)
+  3. git push -u origin gh-pages                 (subimos al github el proyecto y ponemos como origen el nuevo archivo)
+  4. git push origin HEAD                        (suele pedir para empujar al repositorio anterior por el nuevo)                       
+  5. git push origin --delete nombre_de_rama     (eliminar la rama que no sirve del repositorio github)
+  6. git clone url_del_proyecto                  (para clonar proyecto)
 # CUANDO SE QUIERE EDITAR Y EL PROYECTO YA ESTA EN EL REPOSITORIO SOLO SERA 
   1. git push
   2. git commit -am "mensaje"     (reemplaza al git add . // git commit -m "comentario")
 
-  ENLACE DEL VIDEO AYUDA :
-  https://youtu.be/iT4UOkyI09k
+  
